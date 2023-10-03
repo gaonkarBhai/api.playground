@@ -1,43 +1,72 @@
-import React from 'react';
-import clsx from 'clsx';
+import React, { useEffect } from "react";
+import HomeLayout from '../components/HomepageFeatures/Layout/HomeLayout';
+import Card from "../components/HomepageFeatures/Card";
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+// import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+// import Layout from '@theme/Layout';
+// import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import CurserAnimation from "../components/HomepageFeatures/CurserAnimation";
+import style from './index.module.css';
+import OurAPI from "../components/HomepageFeatures/OurAPI";
+import Footer from './../components/HomepageFeatures/Footer';
 
-import styles from './index.module.css';
+function Home() {
+  useEffect(() => {
+    const bgAnimation = document.getElementById("bgAnimation");
+    for (let i = 0; i < 400; i++) {
+      const colorBox = document.createElement("div");
+      colorBox.classList.add(style.colorBox);
+      bgAnimation.appendChild(colorBox);
+    }
+  }, []);
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <header className="bg-blue-500">
-      <div className="container mx-auto text-center py-24">
-        <h1 className="text-4xl font-bold text-white">{siteConfig.title}</h1>
-        <p className="text-xl py-6 text-white">{siteConfig.tagline}</p>
-
-        <div className="py-10">
-          <Link
-            className="bg-white rounded-md text-gray-500 px-4 py-2"
-            to="/docs/intro"
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+    <HomeLayout>
+      <div>
+        <div className={style.bgAnimation} id="bgAnimation">
+          <div className={style.backgroundAmim}></div>
+        </div>
+        <div className={style.container}>
+          <nav>
+            <h1>
+              <span>api.</span>playground
+            </h1>
+          </nav>
+          <section>
+            <div className={style.textBox}>
+              <h1>
+                Your Gateway to <br />
+                <span>API</span> Awesomeness
+              </h1>
+              <p>
+                Dive into a playground of limitless possibilities, where you can
+                test, contribute, and master API implementation effortlessly.
+              </p>
+              <Link to='/docs/intro'>
+                <button className={style.homeBtn}>EXPLORE</button>
+              </Link>
+              <Link to='/docs/intro'>
+                <button className={style.homeBtn}>CONTACT</button>
+              </Link>
+            </div>
+          </section>
         </div>
       </div>
-    </header>
+      <section className={style.introduction}>
+        <p>
+          Welcome to our API platform, tailored for learning and testing.
+          Explore our range of APIs to enhance your development skills, whether
+          you're a beginner or a seasoned developer. Get started now and unlock
+          the potential of our versatile and user-friendly API ecosystem.
+        </p>
+      </section>
+      <Card />
+      <OurAPI/>
+      <Footer/>
+      <CurserAnimation/>
+    </HomeLayout>
   );
 }
 
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
-}
+
+export default Home;

@@ -1,0 +1,8 @@
+{
+  "label": "The Periodic Table API",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "The Periodic Table API is a RESTful service that provides detailed information about chemical elements. It offers easy installation, requires no authentication, and allows users to access data on elements, including atomic properties and historical information."
+  }
+}

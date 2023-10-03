@@ -1,0 +1,8 @@
+{
+  "label": "The Task Manager API",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description":"Welcome to the task-manager-api  your gateway to learning API implementation. Explore GET, POST, PATCH, and DELETE functions to manage tasks effortlessly. Experience real-world scenarios with formatted task data, enabling hands-on learning for all API enthusiasts"
+  }
+}

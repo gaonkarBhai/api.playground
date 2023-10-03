@@ -1,0 +1,8 @@
+{
+  "label": "The Havyaka API",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description":"The Havyaka Rest API is a comprehensive and user-friendly RESTful interface, offering a diverse range of Hindu mantras and suktam details. By enabling versatile queries, it facilitates easy retrieval of desired mantras. Its seamless integration capability with other applications simplifies its usage. With a rich repository of information, this API serves as an invaluable tool for individuals seeking insights into the realm of Hindu mantras and suktam."
+  }
+}

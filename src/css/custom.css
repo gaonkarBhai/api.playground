@@ -32,3 +32,14 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* In your CSS or PostCSS file */
+@layer utilities {
+  .custom-color {
+    background-color: #202020;
+    color: #202020;
+  }
+  .para-color {
+    color: #839BB5;
+  }
+}

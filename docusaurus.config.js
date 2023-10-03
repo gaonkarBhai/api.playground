@@ -6,12 +6,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "api.playground",
+  title: "API Playground - The API Docs",
   tagline: "API DOCS",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.png",
 
   // Set the production url of your site here
-  url: "https://gaonkarBhai.github.io",
+  url: "https://api-playground-omega.vercel.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -41,8 +41,8 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
@@ -63,10 +63,17 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+      algolia: {
+        apiKey: "ba73feeecc6498b6ed74be93543ca287",
+        indexName: "docusaurus",
+        appId: "O9YXT3YM1U", // Optional, if you run the DocSearch crawler on your own
+        placeholder: "Ask me something",
+        contextualSearch: true,
+      },
       navbar: {
-        title: "My Site",
+        title: "API Playground",
         logo: {
-          alt: "My Site Logo",
+          alt: "api.playground logo",
           src: "img/logo.svg",
         },
         items: [
@@ -74,11 +81,10 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "Docs",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/gaonkarBhai/api.playground",
             label: "GitHub",
             position: "right",
           },
@@ -88,10 +94,14 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Stuffs",
             items: [
               {
-                label: "Tutorial",
+                label: "Docs",
+                to: "/docs/intro",
+              },
+              {
+                label: "Chat",
                 to: "/docs/intro",
               },
             ],
@@ -116,10 +126,6 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "GitHub",
                 href: "https://github.com/facebook/docusaurus",

@@ -1,0 +1,18 @@
+.cursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(238, 255, 0, 0.685);
+    border-radius: 50%;
+    pointer-events: none;
+    /* Ensures the dot doesn't interfere with mouse interactions */
+    transform: translate(-50%, -50%);
+    /* Centers the dot on the cursor */
+    z-index: 10;
+}
+
+/* h1:hover~.cursor,
+p:hover~.cursor {
+    transform: scale(2) !important;
+    transition: all .3s linear;
+} */

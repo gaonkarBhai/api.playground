@@ -1,0 +1,9 @@
+{
+  "label": "The Job API",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "
+The Job-API is a dummy API for educational and testing purposes. It offers endpoints for user authentication and job management, enabling users to register, log in, and perform basic CRUD operations on job listings."
+  }
+}

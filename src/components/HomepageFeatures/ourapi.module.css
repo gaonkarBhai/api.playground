@@ -1,0 +1,75 @@
+/*  */
+.apicontainper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 1rem 1rem 1rem;
+    background-color: #202020;
+    position: relative;
+}
+
+.apicontainper h2 {
+    font-size: 2.5rem;
+    /* padding-bottom: 1rem; */
+    margin-top: 1rem;
+}
+
+
+/* Create animated lines */
+.lines {
+    position: absolute;
+    top: -1%;
+    left: 35%;
+    /* right: 0; */
+    height: 12%;
+    width: 60vw;
+    margin: auto;
+}
+
+.line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -30%;
+    left: 0;
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%); */
+    background: rgb(9, 168, 201);
+    background: linear-gradient(90deg, rgba(9, 168, 201, 1) 0%, rgba(198, 7, 170, 0.8183648459383753) 57%, rgba(255, 0, 18, 1) 94%);
+    animation: drop 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+/* Customize individual lines */
+.line:nth-child(1) {
+    margin-left: -25%;
+}
+
+.line:nth-child(1)::after {
+    animation-delay: 2s;
+}
+
+/* Keyframes animation for dropping lines */
+@keyframes drop {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 110%;
+    }
+}
+
