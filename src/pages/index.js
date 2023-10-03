@@ -42,10 +42,10 @@ function Home() {
                 Dive into a playground of limitless possibilities, where you can
                 test, contribute, and master API implementation effortlessly.
               </p>
-              <Link to='/docs/intro'>
+              <Link to="/docs/intro">
                 <button className={style.homeBtn}>EXPLORE</button>
               </Link>
-              <Link to='/docs/intro'>
+              <Link to="https://www.chatbase.co/chatbot-iframe/YJk91KG1jWqYH3D-SMVff">
                 <button className={style.homeBtn}>CONTACT</button>
               </Link>
             </div>
@@ -61,9 +61,9 @@ function Home() {
         </p>
       </section>
       <Card />
-      <OurAPI/>
-      <Footer/>
-      <CurserAnimation/>
+      <OurAPI />
+      <Footer />
+      <CurserAnimation />
     </HomeLayout>
   );
 }
