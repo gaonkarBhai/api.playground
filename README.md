@@ -1,41 +1,31 @@
-# Website
+![API](https://github.com/gaonkarBhai/api.playground/assets/118743210/bda6dc19-0b46-438f-8699-2afa54921caa)
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+# API Playground
 
+Welcome to the API Playground – your ultimate destination for hands-on learning and testing with APIs. Whether you're a seasoned developer or just starting your coding journey, this is the place to explore, experiment, and elevate your skills.
+
+## Installation
+
+1. Clone the Repository
+
+```bash
+git clone https://github.com/gaonkarBhai/api.playground.git
 ```
-$ yarn
+2. Navigate to the Project Directory
+```bash
+cd api.playground
 ```
-
-### Local Development
-
+3. Install Dependencies
+```bash
+npm i
 ```
-$ yarn start
+4. Start the Server
+```bash
+npm start
 ```
+5. Access API Playground in your Browser
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Open your web browser and go to http://localhost:3000 to access the API Playground locally.
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Now you're all set to explore, experiment, and enhance your API skills in your own development environment.

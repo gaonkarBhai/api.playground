@@ -128,6 +128,15 @@ const OurAPI = () => {
               github={"https://github.com/gaonkarBhai/PeriodicTable-RestAPI"}
               api={"https://periodic-table-rest-api.vercel.app/"}
             />
+            <SingleAPI
+              name={"School Management System"}
+              description={
+                "The School Management System API provides a set of endpoints to manage various aspects of a school, including administrators, teachers, students, academic years, classes, programs, subjects, exams, questions, results, and more."
+              }
+              docs={"/docs/School%20Management%20API/intro"}
+              github={"https://github.com/gaonkarBhai/School-Management-System"}
+              api={"/"}
+            />
           </div>
         </div>
       </section>
