@@ -1,0 +1,8 @@
+{
+  "label": "The Ecommerce API",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description":"The E-Commerce Marketplace REST API enables user registration, authentication, and seamless interaction between buyers and sellers. Sellers can create personalized catalogs, buyers can explore and place orders, and sellers can efficiently manage received orders, fostering a user-friendly and efficient e-commerce ecosystem."
+  }
+}
